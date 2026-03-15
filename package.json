@@ -1,0 +1,37 @@
+{
+  "name": "@somedevsdo/tailwind",
+  "version": "0.0.0",
+  "description": "somedevsdo brand tokens for Tailwind CSS v4.",
+  "license": "MIT",
+  "private": false,
+  "packageManager": "pnpm@10.6.5",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "base.css",
+    "tokens.json",
+    "README.md",
+    "AGENTS.md"
+  ],
+  "exports": {
+    ".": "./base.css",
+    "./base.css": "./base.css",
+    "./tokens.json": "./tokens.json",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "scripts": {
+    "tokens:extract": "node scripts/extract-brand-tokens.mjs",
+    "build": "pnpm tokens:extract",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7"
+  }
+}
