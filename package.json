@@ -27,11 +27,15 @@
   "scripts": {
     "tokens:extract": "node scripts/extract-brand-tokens.mjs",
     "build": "pnpm tokens:extract",
+    "test:harness": "tailwindcss -i ./tests/harness/input.css -o ./tests/harness/output.css --minify && node ./scripts/verify-harness.mjs",
+    "verify": "pnpm build && pnpm test:harness",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "pnpm build && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.7"
+    "@changesets/cli": "^2.29.7",
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
   }
 }

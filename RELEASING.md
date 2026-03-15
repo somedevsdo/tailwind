@@ -33,6 +33,12 @@ The workflow already requests required permissions:
 5. Merge the release PR.
 6. GitHub Action publishes `@somedevsdo/tailwind` to `https://npm.pkg.github.com`.
 
+Before merging, run local verification:
+
+```bash
+pnpm verify
+```
+
 ## Quick verification
 
 1. Confirm workflow `Release` succeeded in Actions.

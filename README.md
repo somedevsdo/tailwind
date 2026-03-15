@@ -23,12 +23,15 @@ Dark mode tokens are applied when an ancestor has `data-theme="dark"`.
 ```bash
 pnpm install
 pnpm build
+pnpm test:harness
 ```
 
 `pnpm build` fetches token variables from `https://somedevsdo.com` and regenerates:
 
 - `base.css`
 - `tokens.json`
+
+`pnpm test:harness` runs a Tailwind v4 compile against a local fixture to verify the package generates expected utilities and token mappings.
 
 ## Release flow
 

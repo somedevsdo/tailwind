@@ -22,6 +22,8 @@ This repository publishes `@somedevsdo/tailwind`, a PNPM-managed package contain
 
 - `pnpm tokens:extract`: fetch and regenerate token artifacts.
 - `pnpm build`: same as `pnpm tokens:extract`.
+- `pnpm test:harness`: compiles a fixture with Tailwind v4 and validates generated utilities.
+- `pnpm verify`: runs `pnpm build` and `pnpm test:harness`.
 - `pnpm changeset`: create a new changeset file.
 - `pnpm version-packages`: bump versions from changesets.
 - `pnpm release`: build and publish via changesets.
@@ -29,6 +31,7 @@ This repository publishes `@somedevsdo/tailwind`, a PNPM-managed package contain
 ## Release automation
 
 Workflow: `.github/workflows/changesets.yml`
+Validation workflow: `.github/workflows/ci.yml`
 
 - Trigger: push to `main`.
 - Behavior:
