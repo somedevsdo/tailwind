@@ -4,5 +4,10 @@
   "initialVersions": {
     "@somedevsdo/tailwind": "0.1.0"
   },
-  "changesets": []
+  "changesets": [
+    "bright-tomatoes-invent",
+    "fresh-geese-divide",
+    "swift-eagles-divide",
+    "tough-points-exist"
+  ]
 }
