@@ -24,16 +24,6 @@
   --mine-shaft: #151515;
   --secondary-text: var(--dove-gray);
   --shadow: rgba(0, 0, 0, .05);
-  --size-margin-large: 2rem;
-  --size-margin-medium: 1.5rem;
-  --size-margin-small: 1rem;
-  --size-margin-x-large: 2.5rem;
-  --size-margin-x-small: .5rem;
-  --size-padding-large: 1rem;
-  --size-padding-medium: .75rem;
-  --size-padding-small: .5rem;
-  --size-padding-x-large: 1.25rem;
-  --size-padding-x-small: .25rem;
   --white: #fff;
 }
 
