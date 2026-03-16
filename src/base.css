@@ -1,65 +1,75 @@
 :root {
+  /* Color primitives */
   --alto: #ddd;
-  --background: var(--white);
-  --clr-background: var(--clr-palette-mystic);
-  --clr-content-background: var(--clr-palette-white);
-  --clr-header: var(--clr-palette-ebony);
-  --clr-palette-ebony: #090d18;
-  --clr-palette-ebony-clay: #1f2132;
-  --clr-palette-emporer: #555;
-  --clr-palette-mystic: #e8edf2;
-  --clr-palette-perfume: #d5a4f5;
-  --clr-palette-seance: #7621ab;
-  --clr-palette-silver: #c6c6c6;
-  --clr-palette-white: #fff;
-  --clr-text: var(--clr-palette-emporer);
   --cod-gray: #151515;
   --dove-gray: #666;
+  --ebony: #090d18;
+  --ebony-clay: #1f2132;
+  --emporer: #555;
+  --mine-shaft: #151515;
+  --mystic: #e8edf2;
+  --perfume: #d5a4f5;
+  --seance: #7621ab;
+  --silver: #c6c6c6;
+  --white: #fff;
+
+  /* Semantic colors */
+  --background: var(--white);
+  --content-background: var(--white);
+  --foreground: var(--cod-gray);
+  --header: var(--ebony);
+  --primary-background: var(--mystic);
+  --primary-text: var(--emporer);
+  --secondary-text: var(--dove-gray);
+  --shadow: rgba(0, 0, 0, .05);
+
+  /* Typography */
   --font-family-default: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --font-family-header: Poppins, var(--font-family-default);
   --font-family-text: "Noto Sans", var(--font-family-default);
-  --foreground: var(--cod-gray);
   --line-height-header: 1.3;
   --line-height-text: 1.6;
-  --mine-shaft: #151515;
-  --secondary-text: var(--dove-gray);
-  --shadow: rgba(0, 0, 0, .05);
-  --white: #fff;
 }
 
 [data-theme="dark"] {
+  /* Semantic colors */
   --background: var(--cod-gray);
-  --clr-background: var(--clr-palette-ebony);
-  --clr-content-background: var(--clr-palette-ebony-clay);
-  --clr-header: var(--clr-palette-mystic);
-  --clr-text: var(--clr-palette-silver);
+  --content-background: var(--ebony-clay);
   --foreground: var(--white);
+  --header: var(--mystic);
+  --primary-background: var(--ebony);
+  --primary-text: var(--silver);
   --secondary-text: var(--alto);
   --shadow: rgba(255, 255, 255, .05);
 }
 
 @theme inline {
+  /* Color primitives */
   --color-alto: var(--alto);
-  --color-background: var(--background);
-  --color-primary-background: var(--clr-background);
-  --color-content-background: var(--clr-content-background);
-  --color-header: var(--clr-header);
-  --color-ebony: var(--clr-palette-ebony);
-  --color-ebony-clay: var(--clr-palette-ebony-clay);
-  --color-emporer: var(--clr-palette-emporer);
-  --color-mystic: var(--clr-palette-mystic);
-  --color-perfume: var(--clr-palette-perfume);
-  --color-seance: var(--clr-palette-seance);
-  --color-silver: var(--clr-palette-silver);
-  --color-white: var(--clr-palette-white);
-  --color-primary-text: var(--clr-text);
   --color-cod-gray: var(--cod-gray);
   --color-dove-gray: var(--dove-gray);
-  --font-font-family-default: var(--font-family-default);
-  --font-font-family-header: var(--font-family-header);
-  --font-font-family-text: var(--font-family-text);
-  --color-foreground: var(--foreground);
+  --color-ebony: var(--ebony);
+  --color-ebony-clay: var(--ebony-clay);
+  --color-emporer: var(--emporer);
   --color-mine-shaft: var(--mine-shaft);
+  --color-mystic: var(--mystic);
+  --color-perfume: var(--perfume);
+  --color-seance: var(--seance);
+  --color-silver: var(--silver);
+  --color-white: var(--white);
+
+  /* Semantic colors */
+  --color-background: var(--background);
+  --color-content-background: var(--content-background);
+  --color-foreground: var(--foreground);
+  --color-header: var(--header);
+  --color-primary-background: var(--primary-background);
+  --color-primary-text: var(--primary-text);
   --color-secondary-text: var(--secondary-text);
   --color-shadow: var(--shadow);
+
+  /* Typography */
+  --font-default: var(--font-family-default);
+  --font-header: var(--font-family-header);
+  --font-text: var(--font-family-text);
 }

@@ -8,8 +8,8 @@ const checks = [
   { name: "color utility", pattern: ".bg-primary-background" },
   { name: "text utility", pattern: ".text-primary-text" },
   { name: "spacing utility", pattern: ".p-4" },
-  { name: "font utility", pattern: ".font-font-family-header" },
-  { name: "token mapping", pattern: "var(--clr-background)" }
+  { name: "font utility", pattern: ".font-header" },
+  { name: "token mapping", pattern: "var(--primary-background)" }
 ];
 
 const failures = checks.filter((check) => !output.includes(check.pattern));
