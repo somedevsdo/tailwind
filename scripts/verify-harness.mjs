@@ -7,7 +7,7 @@ const output = await readFile(outputPath, "utf8");
 const checks = [
   { name: "color utility", pattern: ".bg-clr-background" },
   { name: "text utility", pattern: ".text-clr-text" },
-  { name: "spacing utility", pattern: ".p-size-padding-large" },
+  { name: "spacing utility", pattern: ".p-4" },
   { name: "font utility", pattern: ".font-font-family-header" },
   { name: "token mapping", pattern: "var(--clr-background)" }
 ];

@@ -10,14 +10,12 @@
   },
   "files": [
     "base.css",
-    "tokens.json",
     "README.md",
     "AGENTS.md"
   ],
   "exports": {
     ".": "./base.css",
     "./base.css": "./base.css",
-    "./tokens.json": "./tokens.json",
     "./package.json": "./package.json"
   },
   "publishConfig": {
@@ -25,13 +23,12 @@
     "access": "restricted"
   },
   "scripts": {
-    "tokens:extract": "node scripts/extract-brand-tokens.mjs",
-    "build": "pnpm tokens:extract",
+    "build": "node -e \"console.log('No build step required; tokens are source-controlled in base.css.')\"",
     "test:harness": "tailwindcss -i ./tests/harness/input.css -o ./tests/harness/output.css --minify && node ./scripts/verify-harness.mjs",
     "verify": "pnpm build && pnpm test:harness",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "pnpm build && changeset publish"
+    "release": "pnpm verify && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.7",

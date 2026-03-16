@@ -7,21 +7,14 @@ This repository publishes `@somedevsdo/tailwind`, a PNPM-managed package contain
 ## Package outputs
 
 - `base.css`: includes both light (`:root`) and dark (`[data-theme="dark"]`) token variables plus Tailwind v4 `@theme` mappings.
-- `tokens.json`: extracted source tokens for traceability.
 
-## How tokens are sourced
+## How tokens are maintained
 
-1. `scripts/extract-brand-tokens.mjs` fetches `https://somedevsdo.com`.
-2. It resolves current Astro stylesheet URL(s) dynamically.
-3. It extracts CSS custom properties from:
-   - `:root`
-   - `[data-theme=dark]`
-4. It writes `base.css` and `tokens.json`.
+`base.css` is maintained in-repo as a one-time extracted baseline that can now be updated directly.
 
 ## Commands
 
-- `pnpm tokens:extract`: fetch and regenerate token artifacts.
-- `pnpm build`: same as `pnpm tokens:extract`.
+- `pnpm build`: no-op placeholder used in CI/release flows.
 - `pnpm test:harness`: compiles a fixture with Tailwind v4 and validates generated utilities.
 - `pnpm verify`: runs `pnpm build` and `pnpm test:harness`.
 - `pnpm changeset`: create a new changeset file.
@@ -58,5 +51,5 @@ Validation workflow: `.github/workflows/ci.yml`
 ## Operational notes
 
 - Use PNPM exclusively.
-- Commit generated `base.css` and `tokens.json` when source tokens change.
+- Commit updates to `base.css` when tokens change.
 - Add a changeset for every user-facing package change.
