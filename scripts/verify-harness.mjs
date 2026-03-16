@@ -5,8 +5,8 @@ const outputPath = new URL("../tests/harness/output.css", import.meta.url);
 const output = await readFile(outputPath, "utf8");
 
 const checks = [
-  { name: "color utility", pattern: ".bg-clr-background" },
-  { name: "text utility", pattern: ".text-clr-text" },
+  { name: "color utility", pattern: ".bg-primary-background" },
+  { name: "text utility", pattern: ".text-primary-text" },
   { name: "spacing utility", pattern: ".p-4" },
   { name: "font utility", pattern: ".font-font-family-header" },
   { name: "token mapping", pattern: "var(--clr-background)" }

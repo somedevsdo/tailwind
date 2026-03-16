@@ -41,18 +41,18 @@
 @theme inline {
   --color-alto: var(--alto);
   --color-background: var(--background);
-  --color-clr-background: var(--clr-background);
-  --color-clr-content-background: var(--clr-content-background);
-  --color-clr-header: var(--clr-header);
-  --color-clr-palette-ebony: var(--clr-palette-ebony);
-  --color-clr-palette-ebony-clay: var(--clr-palette-ebony-clay);
-  --color-clr-palette-emporer: var(--clr-palette-emporer);
-  --color-clr-palette-mystic: var(--clr-palette-mystic);
-  --color-clr-palette-perfume: var(--clr-palette-perfume);
-  --color-clr-palette-seance: var(--clr-palette-seance);
-  --color-clr-palette-silver: var(--clr-palette-silver);
-  --color-clr-palette-white: var(--clr-palette-white);
-  --color-clr-text: var(--clr-text);
+  --color-primary-background: var(--clr-background);
+  --color-content-background: var(--clr-content-background);
+  --color-header: var(--clr-header);
+  --color-ebony: var(--clr-palette-ebony);
+  --color-ebony-clay: var(--clr-palette-ebony-clay);
+  --color-emporer: var(--clr-palette-emporer);
+  --color-mystic: var(--clr-palette-mystic);
+  --color-perfume: var(--clr-palette-perfume);
+  --color-seance: var(--clr-palette-seance);
+  --color-silver: var(--clr-palette-silver);
+  --color-white: var(--clr-palette-white);
+  --color-primary-text: var(--clr-text);
   --color-cod-gray: var(--cod-gray);
   --color-dove-gray: var(--dove-gray);
   --font-font-family-default: var(--font-family-default);
@@ -62,5 +62,4 @@
   --color-mine-shaft: var(--mine-shaft);
   --color-secondary-text: var(--secondary-text);
   --color-shadow: var(--shadow);
-  --color-white: var(--white);
 }
