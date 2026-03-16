@@ -9,13 +9,13 @@
     "node": ">=20.0.0"
   },
   "files": [
-    "base.css",
+    "src/base.css",
     "README.md",
     "AGENTS.md"
   ],
   "exports": {
-    ".": "./base.css",
-    "./base.css": "./base.css",
+    ".": "./src/base.css",
+    "./base.css": "./src/base.css",
     "./package.json": "./package.json"
   },
   "publishConfig": {
@@ -23,7 +23,7 @@
     "access": "restricted"
   },
   "scripts": {
-    "build": "node -e \"console.log('No build step required; tokens are source-controlled in base.css.')\"",
+    "build": "node -e \"console.log('No build step required; tokens are source-controlled in src/base.css.')\"",
     "test:harness": "tailwindcss -i ./tests/harness/input.css -o ./tests/harness/output.css --minify && node ./scripts/verify-harness.mjs",
     "verify": "pnpm build && pnpm test:harness",
     "changeset": "changeset",

@@ -10,7 +10,7 @@ This repository publishes `@somedevsdo/tailwind`, a PNPM-managed package contain
 
 ## How tokens are maintained
 
-`base.css` is maintained in-repo as a one-time extracted baseline that can now be updated directly.
+`src/base.css` is maintained in-repo as a one-time extracted baseline that can now be updated directly.
 
 ## Commands
 
@@ -54,5 +54,5 @@ Validation workflow: `.github/workflows/ci.yml`
 ## Operational notes
 
 - Use PNPM exclusively.
-- Commit updates to `base.css` when tokens change.
+- Commit updates to `src/base.css` when tokens change.
 - Add a changeset for every user-facing package change.

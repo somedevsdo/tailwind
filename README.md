@@ -25,7 +25,7 @@ pnpm install
 pnpm test:harness
 ```
 
-`base.css` is source-controlled and edited directly in this repo.
+`src/base.css` is source-controlled and edited directly in this repo.
 
 `pnpm build` is a no-op placeholder used by CI/release scripts.
 
