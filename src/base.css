@@ -5,7 +5,7 @@
   --dove-gray: #666;
   --ebony: #090d18;
   --ebony-clay: #1f2132;
-  --emporer: #555;
+  --emperor: #555;
   --mine-shaft: #151515;
   --mystic: #e8edf2;
   --perfume: #d5a4f5;
@@ -19,7 +19,7 @@
   --foreground: var(--cod-gray);
   --header: var(--ebony);
   --primary-background: var(--mystic);
-  --primary-text: var(--emporer);
+  --primary-text: var(--emperor);
   --secondary-text: var(--dove-gray);
   --shadow: rgba(0, 0, 0, .05);
 
@@ -50,7 +50,7 @@
   --color-dove-gray: var(--dove-gray);
   --color-ebony: var(--ebony);
   --color-ebony-clay: var(--ebony-clay);
-  --color-emporer: var(--emporer);
+  --color-emperor: var(--emperor);
   --color-mine-shaft: var(--mine-shaft);
   --color-mystic: var(--mystic);
   --color-perfume: var(--perfume);
