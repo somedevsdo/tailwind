@@ -35,6 +35,8 @@ pnpm test:harness
 
 This repo uses [Changesets](https://github.com/changesets/changesets).
 
+Prerelease mode is enabled with the `beta` tag (`.changeset/pre.json`), so published versions are pushed as beta prereleases until prerelease mode is exited.
+
 1. Add a changeset:
 
    ```bash
@@ -44,3 +46,9 @@ This repo uses [Changesets](https://github.com/changesets/changesets).
 2. Merge to `main`.
 3. GitHub Actions opens/updates a release PR.
 4. Merging the release PR publishes to GitHub Packages automatically.
+
+To leave prerelease mode later:
+
+```bash
+pnpm changeset:pre:exit
+```

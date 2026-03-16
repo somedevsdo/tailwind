@@ -21,6 +21,9 @@ The workflow already requests required permissions:
 
 ## Standard release flow
 
+This repository is currently in Changesets prerelease mode with tag `beta` (`.changeset/pre.json`).
+That means published versions are released as beta prereleases until prerelease mode is exited.
+
 1. Make package changes.
 2. Add a changeset:
 
@@ -32,6 +35,12 @@ The workflow already requests required permissions:
 4. GitHub Action creates or updates a release PR.
 5. Merge the release PR.
 6. GitHub Action publishes `@somedevsdo/tailwind` to `https://npm.pkg.github.com`.
+
+To exit prerelease mode when you're ready for stable releases:
+
+```bash
+pnpm changeset:pre:exit
+```
 
 Before merging, run local verification:
 

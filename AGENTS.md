@@ -18,6 +18,8 @@ This repository publishes `@somedevsdo/tailwind`, a PNPM-managed package contain
 - `pnpm test:harness`: compiles a fixture with Tailwind v4 and validates generated utilities.
 - `pnpm verify`: runs `pnpm build` and `pnpm test:harness`.
 - `pnpm changeset`: create a new changeset file.
+- `pnpm changeset:pre:enter`: enter prerelease mode with `beta` tag.
+- `pnpm changeset:pre:exit`: exit prerelease mode.
 - `pnpm version-packages`: bump versions from changesets.
 - `pnpm release`: build and publish via changesets.
 
@@ -30,6 +32,7 @@ Validation workflow: `.github/workflows/ci.yml`
 - Behavior:
   - creates/updates release PR when unpublished changesets exist,
   - publishes package when release PR merges.
+  - while `.changeset/pre.json` exists with tag `beta`, published versions are prereleases.
 
 ## Registry configuration
 

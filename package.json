@@ -27,6 +27,8 @@
     "test:harness": "tailwindcss -i ./tests/harness/input.css -o ./tests/harness/output.css --minify && node ./scripts/verify-harness.mjs",
     "verify": "pnpm build && pnpm test:harness",
     "changeset": "changeset",
+    "changeset:pre:enter": "changeset pre enter beta",
+    "changeset:pre:exit": "changeset pre exit",
     "version-packages": "changeset version",
     "release": "pnpm verify && changeset publish"
   },
